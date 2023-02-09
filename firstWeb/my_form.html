@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+  </head>
+
+  <body>
+    <form action="">
+      <h1>Hackathon Registration Form</h1>
+      <p>Required fields are followed by *</p>
+      <h2>All Informations</h2>
+
+      <p>
+        Name : *<input
+          type="text"
+          name="name"
+          required
+          placeholder="Full Name"
+        />
+      </p>
+
+      <fieldset>
+        <legend>Gender</legend>
+        <p>
+          Male <input type="radio" name="gender" id="Male" /> Female
+          <input type="radio" name="gender" id="Female" />
+        </p>
+      </fieldset>
+      <p>
+        Address : *<textarea
+          name="address"
+          id="address"
+          cols="100"
+          rows="10"
+          required
+        ></textarea>
+      </p>
+      <p>
+        Email : *<input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="Email ID"
+        />
+      </p>
+      <p>Pincode : <input type="number" name="pincode" id="pincode" /></p>
+      <hr />
+      <h2>Area of Interest</h2>
+      <p>
+        Interested Skills :
+        <select name="skills" id="skills">
+          <option value="">-- Select a Skills --</option>
+          <option value="Web3">Web3</option>
+          <option value="frontend">Frontend</option>
+          <option value="ML">Machine Learning</option>
+          <option value="android">Android</option>
+        </select>
+      </p>
+      <p>
+        Registration Number *<input
+          type="number"
+          name="Reg_No"
+          id="Reg_No"
+          required
+        />
+      </p>
+      <p>
+        Date of registration
+        <input type="date" name="Last_date" id="Last_date" />
+      </p>
+      <p>
+        Password *<input
+          type="password"
+          name="password"
+          id="password"
+          required
+        />
+      </p>
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>
